@@ -4,9 +4,14 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  function countUp() {
+    setCount(count+1);
+  }
+
   return (
     <>
-      <div>react start</div>
+      <div className='bg-cyan-200'>{count}</div>
+      <button onClick={countUp}>click</button>
     </>
   )
 }
